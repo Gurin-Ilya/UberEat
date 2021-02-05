@@ -1,0 +1,465 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #1d1d1d;
+}
+header {
+  padding: 0 2% 0 2%;
+  display: flex;
+  height: 4em;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 999999;
+}
+.logo {
+  align-self: center;
+  cursor: pointer;
+}
+.empty_space_in_header {
+  flex-grow: 1;
+}
+.button_enter {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.2em 0 1.2em;
+  height: 60%;
+  align-self: center;
+  cursor: pointer;
+  margin-right: 1em;
+}
+.button_enter:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.button_enter:active {
+  background: #e0e0e0;
+}
+.button_enter p {
+  font-weight: 500;
+  font-size: 13px;
+}
+.basket {
+  margin-left: 1em;
+  align-self: center;
+  cursor: pointer;
+}
+.preview {
+  width: 100%;
+  height: 365px;
+  background-image: url("images1/previewLg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  padding-top: 4em;
+}
+.row-preview {
+  padding: 0 1% 0 1%;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+}
+.previewCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5em;
+  padding: 2.5em 2em 2em;
+  box-sizing: border-box;
+  height: 204px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+.previewCard > p {
+  margin: 0;
+  font-size: 36px;
+  line-height: 42px;
+}
+.previewCard > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.moneykitchen {
+  font-size: 14px;
+  line-height: 16px;
+  color: #626262;
+}
+.cardTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 100px;
+  background: #262626;
+  border-radius: 16px;
+}
+.cardTime p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+}
+.filters {
+  display: flex;
+  align-items: center;
+  padding: 0 2% 0 2%;
+  height: 80px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+}
+.filters > a {
+  text-decoration: none;
+  margin-right: 3em;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+.filters > a:last-child {
+  margin-right: 0;
+}
+.filters .snack {
+  color: #327430;
+}
+.MainPage1 {
+  padding: 3em 2% 0 2%;
+}
+.divForTopic {
+  margin-bottom: 2em;
+}
+.topic {
+  font-size: 22px;
+  line-height: 34px;
+  margin: 0;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 3em;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+.info-food {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  padding: 1em;
+}
+.card p {
+  margin: 0;
+}
+.name-food {
+  font-size: 16px;
+  line-height: 24px;
+}
+.card .ingredients {
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+  margin-top: 0.5em;
+}
+.empty-space {
+  flex-grow: 1;
+}
+.price {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+}
+.card p,
+img {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 4em;
+  padding: 4em 2% 0 2%;
+  background: #262626;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.logoinfooter {
+  margin-bottom: 2em;
+}
+.line-in-footer {
+  margin-bottom: 2em;
+  opacity: 0.4;
+}
+.help-in-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  margin-bottom: 4em;
+}
+.help-in-footer-item {
+  display: flex;
+  flex-direction: column;
+}
+.help-in-footer a {
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 2em;
+  align-self: flex-start;
+}
+.help-in-footer-item a:first-child {
+  margin-top: 1em;
+}
+.help-in-footer-item a:last-child {
+  margin-bottom: 0;
+}
+.dropbtn {
+  background-color: #3b3b3b;
+  color: white;
+  font-size: 13px;
+  line-height: 15px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.9em 0.6em 0.9em 1.3em;
+  border-radius: 2px;
+}
+.language {
+  margin: 0;
+}
+.world1 {
+  display: none;
+}
+.world2 {
+  margin-right: 1.3em;
+}
+.Shape {
+  margin-left: 4em;
+}
+.dropdown {
+  position: relative;
+  display: block;
+  margin-bottom: 1.3em;
+  align-self: flex-start;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #57ad56;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 172px;
+}
+#English {
+  color: white;
+  padding: 12px 4em;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 0;
+}
+.dropdown-content:hover {
+  background-color: #37a144;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #57ad56;
+}
+.UberEats-in-footer p {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 1.5em;
+}
+.facebook {
+  margin-right: 0.5em;
+}
+.twitter {
+  margin-right: 0.5em;
+}
+.app-in-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.app-in-footer a:first-child {
+  margin-right: 1.5em;
+}
+.app-in-footer a:last-child {
+  margin-left: 1.5em;
+}
+.laws-in-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  width: 85%;
+}
+.laws-in-footer a {
+  font-size: 11px;
+  line-height: 13px;
+}
+.button-arrow {
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  box-sizing: border-box;
+  background: #59bd5a;
+  border-radius: 2px;
+  z-index: 100;
+  right: 16px;
+  bottom: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    padding: 0 7.2% 0 6.7%;
+  }
+  .previewCard {
+    left: 6.7%;
+  }
+  .row-preview {
+    padding: 0 7.2% 0 6%;
+  }
+  .filters {
+    padding: 0 7.2% 0 6.7%;
+  }
+  .MainPage1 {
+    padding: 3em 7.2% 0 6.7%;
+  }
+  .card {
+    flex-basis: 49%;
+  }
+  footer {
+    padding: 4em 7.2% 0 6.7%;
+  }
+  .Shape {
+    margin-left: 8em;
+  }
+  .dropdown-content {
+    width: 223px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .basket {
+    display: none;
+  }
+  .startPictureLg {
+    display: none;
+  }
+  .startPictureMd {
+    display: none;
+  }
+  .startPictureSm {
+    display: block;
+  }
+  .preview {
+    background-image: url("images1/previewSm.jpg");
+    height: 255.89px;
+  }
+  .previewCard {
+    margin-top: 9em;
+    height: 180px;
+    padding-top: 2em;
+  }
+  .previewCard > p {
+    align-self: center;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .previewCard > div {
+    flex-direction: column;
+  }
+  .filters {
+    display: none;
+  }
+  .divForTopic {
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+  }
+  .topic::after {
+    content: "";
+    display: block;
+    margin: 0.3em 20% 0;
+    width: auto;
+    height: 1px;
+    background: #757575;
+  }
+  .card {
+    margin-left: 2%;
+    flex-basis: 98%;
+    border: none;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  }
+  .info-food{
+    padding-left: 0;
+  }
+  .help-in-footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4em;
+    grid-gap: 0;
+  }
+  .help-in-footer-item a:first-child {
+    margin-top: 2em;
+  }
+  #a-in-footer {
+    margin-top: 3em;
+  }
+  .app-in-footer a:first-child {
+    margin-right: 1em;
+  }
+  .app-in-footer a:last-child {
+    margin-left: 1em;
+  }
+  .laws-in-footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    align-items: flex-start;
+  }
+  .laws-in-footer a {
+    margin-bottom: 2em;
+  }
+  .button-arrow {
+    height: 64px;
+    width: 64px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .startPictureLg {
+    display: none;
+  }
+  .startPictureMd {
+    display: block;
+  }
+  .startPictureSm {
+    display: none;
+  }
+  .preview {
+    background-image: url("images1/previewMd.jpg");
+  }
+  .laws-in-footer {
+    width: 100%;
+  }
+}
